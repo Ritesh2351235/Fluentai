@@ -86,9 +86,25 @@ export default function LandingPage() {
         const userInfo = await userInfoResponse.json();
         localStorage.setItem('user', JSON.stringify({
           name: userInfo.name,
+          email: userInfo.email,
           picture: userInfo.picture
         }));
+        const userData = {
+          name: userInfo.name,
+          email: userInfo.email,
+        };
 
+        const db = await fetch('http://13.203.89.62:3000/user', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(userData),
+        });
+        if (!db.ok) {
+          console.log("Error saving user info to db");
+        }
+        console.log(db);
         navigate('/dashboard');
       } catch (error) {
         console.error("Error fetching user info:", error);
