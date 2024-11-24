@@ -95,7 +95,7 @@ export default function ReadingPractice() {
           formData.append('audio', audioBlob)
           formData.append('text', paragraph)
 
-          const response = await fetch('http://localhost:3000/analyze-reading', {
+          const response = await fetch('https://nutritionai.in/analyze-reading', {
             method: 'POST',
             body: formData
           })
