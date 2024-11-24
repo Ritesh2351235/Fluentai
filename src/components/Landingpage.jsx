@@ -94,7 +94,7 @@ export default function LandingPage() {
           email: userInfo.email,
         };
 
-        const db = await fetch('https://nutritionai.in:3000/user', {
+        const db = await fetch('https://nutritionai.in/user', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
