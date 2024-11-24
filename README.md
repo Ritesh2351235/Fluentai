@@ -1,8 +1,28 @@
-# React + Vite
+# FluentAI  
+**FluentAI** is an AI-powered application that helps users improve their English communication skills by practicing **reading**, **writing**, and **speaking**. The app provides personalized feedback and grades for each exercise, helping users identify areas of improvement and track progress over time.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features  
+- **Reading Practice**: Read passages aloud, get feedback on grammar, pronunciation, and tone.  
+- **Speaking Practice**: Speak on a topic, receive scores on fluency, clarity, and intonation.  
+- **Writing Practice**: Submit written content and get detailed feedback on structure, grammar, and coherence.  
 
-Currently, two official plugins are available:
+## Tech Stack  
+- **Frontend**:  
+  - React  
+  - Tailwind CSS  
+  - Shadcn Components  
+  - GSAP (for animations)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Backend**:  
+  - Node.js  
+  - Express  
+  - AssemblyAI API (audio transcription)  
+  - Ollama Mistral Model (AI evaluation and feedback)  
+
+- **Database & Hosting**:  
+  - PostgreSQL (Aiven) for user data and progress tracking  
+  - AWS EC2 (t2.large) for backend deployment  
+  - Vercel for frontend deployment  
+
+Feel free to contribute or report issues to help enhance FluentAI!  
+
