@@ -58,7 +58,7 @@ export default function Writing() {
     setAnalysis(null)
 
     try {
-      const response = await fetch('https://www.nutritionai.in/analyze-writing', {
+      const response = await fetch('https://nutritionai.in/analyze-writing', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
