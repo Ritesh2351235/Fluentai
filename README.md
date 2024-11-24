@@ -6,6 +6,9 @@
 - **Speaking Practice**: Speak on a topic, receive scores on fluency, clarity, and intonation.  
 - **Writing Practice**: Submit written content and get detailed feedback on structure, grammar, and coherence.  
 
+![Image](https://github.com/Ritesh2351235/Fluentai/blob/main/Screenshot%202024-11-24%20at%2011.49.22%E2%80%AFPM.png)
+
+
 ## Tech Stack  
 - **Frontend**:  
   - React  
