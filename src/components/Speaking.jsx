@@ -86,7 +86,7 @@ export default function Speaking() {
           formData.append('audio', audioBlob)
 
           console.log("Sending audio to backend...")
-          const response = await fetch('http://13.203.89.62/transcribe', {
+          const response = await fetch('https://nutritionai.in/transcribe', {
             method: 'POST',
             body: formData
           })
