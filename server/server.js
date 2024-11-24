@@ -5,9 +5,10 @@ import cors from 'cors';
 import { AssemblyAI } from 'assemblyai';
 import fetch from 'node-fetch';
 import { PrismaClient } from '@prisma/client';
+import { env } from 'process';
 const app = express();
 const upload = multer({ dest: 'uploads/' });
-const client = new AssemblyAI({ apiKey: 'b225efd7bf6947c0b6af6d422954e453' });
+const client = new AssemblyAI({ apiKey: env.ASSEMBLY_API_KEY });
 
 // Enable CORS
 app.use(cors());
